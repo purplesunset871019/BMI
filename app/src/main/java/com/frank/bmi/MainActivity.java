@@ -24,13 +24,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void bmi(View view){
         Log.d("MainActivity" ,"bmi");
-
         String w = edweight.getText().toString();
         String h = edheight.getText().toString();
+
         Log.d("MainActivity",w+"/"+h);
         float weight = Float.parseFloat(w);
         float height = Float.parseFloat(h);
         float bmi = weight/(height*height);
+
         Log.d("MainActivity",bmi+"");
         Toast.makeText(this,"your bmi is"+bmi,Toast.LENGTH_LONG).show();
         new AlertDialog.Builder(this)
@@ -44,7 +45,25 @@ public class MainActivity extends AppCompatActivity {
                     }
                 })
                 .show();
+
+
     }
 
+    public void help(View view){
+        Log.d("MainActivity","help");
+        Toast.makeText(this,"Weight(kg)",Toast.LENGTH_LONG).show();
+        new AlertDialog.Builder(this)
+                .setTitle("Help").setMessage("Weight(kg)"+"\n"+"Height(m)")
+                //.setMessage("Height(m)")
+                .setPositiveButton("back", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                edheight.setText("");
+                                edweight.setText("");
+                            }
+                        }
+                )
+                .show();
 
+    }
 }
