@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="height">身高</string>
+    <string name="weight">體重</string>
+    <string name="submit">提交</string>
+    <string name="help">幫助</string>
+    <string name="support">提示</string>
+    <string name="helpMessage">BMI公式為體重除以身高平方</string>
+    <string name="helpTittle">幫助</string>
+    <string name="submitMessage">你的BMI是</string>
+    <string name="submitBack">完成</string>
+    <string name="submitTittle">BMI計算</string>
+    <string name="helpBack">返回</string>
+</resources>

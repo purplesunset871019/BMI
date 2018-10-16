@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">BMI</string>
+    <string name="height">height</string>
+    <string name="weight">weight</string>
+    <string name="submit">submit</string>
+    <string name="help">Help</string>
+    <string name="support">support</string>
+    <string name="helpMessage">BMI formula is weight/(height*height)</string>
+    <string name="helpTittle">Help</string>
+    <string name="submitMessage">Your BMI is</string>
+    <string name="submitBack">Finish</string>
+    <string name="submitTittle">BMI Calculate</string>
+    <string name="helpBack">back</string>
+    <string name="supportTittle">Supprot</string>
+    <string name="supportBack">back</string>
 </resources>
